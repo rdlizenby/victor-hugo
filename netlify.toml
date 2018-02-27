@@ -7,22 +7,3 @@ HUGO_VERSION = "0.37"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
-[context.split1]
-command = "hugo --enableGitInfo"
-
-[context.split1.environment]
-HUGO_VERSION = "0.37"
-HUGO_ENV = "production"
-
-[context.deploy-preview]
-command = "hugo -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.37"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.37"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
-
